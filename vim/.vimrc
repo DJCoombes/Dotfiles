@@ -12,7 +12,7 @@ Plugin 'scrooloose/nerdtree'
 call vundle#end()
 
 syntax on
-colorscheme onedark
+silent! colorscheme onedark
 
 set number
 set ignorecase
