@@ -179,11 +179,12 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 # Fix VMWare copy / paste
 exec vmware-user-suid-wrapper --no-startup-id
 
-# Start the network manager applet in the status bar
-#exec nm-applet --no-startup-id
-
 # Remove border (Required for gaps)
 for_window [class=".*"] border pixel 2
+
+# Set border colors
+client.focused          #EBDBB2 #EBDBB2 #EBDBB2 #EBDBB2 #EBDBB2
+client.unfocused        #453A3A #453A3A #453A3A #453A3A #453A3A
 
 # Set gaps variants
 gaps inner 10
