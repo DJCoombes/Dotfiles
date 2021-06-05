@@ -4,7 +4,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 export GOPATH=$HOME/golang
-export GOROOT=/usr/local/opt/go/libexec
+export GOROOT=/usr/local/go
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOPATH
 export PATH=$PATH:$GOROOT/bin
