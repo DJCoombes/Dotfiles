@@ -3,11 +3,12 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-export GOPATH=$HOME/golang
+export GOPATH=$HOME/go
 export GOROOT=/usr/local/go
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOPATH
 export PATH=$PATH:$GOROOT/bin
+export PATH=$PATH:$GOBIN
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -105,7 +106,4 @@ source $ZSH/oh-my-zsh.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [[ -s "$HOME/.local/share/marker/marker.sh" ]] && source "$HOME/.local/share/marker/marker.sh"
 
-
-alias vpnStart='nmcli con up id RemoteServer --ask'
-alias vpnStop='nmcli con down id RemoteServer'
 alias control-center='env XDG_CURRENT_DESKTOP=GNOME gnome-control-center'
